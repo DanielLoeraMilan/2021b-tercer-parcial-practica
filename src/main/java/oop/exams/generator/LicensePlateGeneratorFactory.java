@@ -8,7 +8,7 @@ public class LicensePlateGeneratorFactory {
     private final LicensePlateGenerator southLicensePlateGenerator = new SouthLicensePlateGenerator();
     private final LicensePlateGenerator eastLicensePlateGenerator = new EastLicensePlateGenerator();
     private final LicensePlateGenerator westLicensePlateGenerator = new WestLicensePlateGenerator();
-    private final LicensePlateGenerator centerLicensePlateGenerator = new CenterLicensePlateGenerator();
+    private final LicensePlateGenerator centerLicensePlateGenerator = new DefaultLicensePlateGenerator();
 
     public LicensePlateGenerator getInstance(String state) {
         return switch (state) {
